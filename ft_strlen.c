@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sforster <sforster@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 10:25:39 by sforster          #+#    #+#             */
-/*   Updated: 2024/02/07 10:29:15 by sforster         ###   ########.fr       */
+/*   Updated: 2024/02/08 22:04:40 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int a;
 
@@ -22,9 +23,10 @@ int	ft_strlen(char *str)
 	return (a);
 }
 
+/*
 int main(void)
 {
 	char	*t = "Le silence du sapin sous la soie";
 	printf("%d", ft_strlen(t));
 	return (0);
-}
+}*/
