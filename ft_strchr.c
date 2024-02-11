@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 11:04:46 by sforster          #+#    #+#             */
-/*   Updated: 2024/02/08 22:09:30 by marvin           ###   ########.fr       */
+/*   Updated: 2024/02/11 16:35:30 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@ char	*ft_strchr(char *str, int c)
 	int	i;
 
 	i = 0;
-	if (!c)
-		return (NULL);
 	while (str[i])
 	{
 		if (str[i] == c)
 			return (&str[i]);
 		i++;
 	}
-	return (str);
+	if (!c)
+		return (&str[i]);
+	return (NULL);
 }
 
 /*
@@ -37,5 +37,4 @@ int main(void)
 
 	printf("%s", ft_strchr(st, n));
 	return (0);
-}
-*/
+}*/

@@ -6,14 +6,13 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 10:50:32 by sforster          #+#    #+#              #
-#    Updated: 2024/02/08 21:58:19 by marvin           ###   ########.fr        #
+#    Updated: 2024/02/11 16:53:59 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=	ft_isalpha.c\
-			ft_strlen.c\
-			ft_toupper.c	ft_strchr.c\
+SRCS	=	ft_isalpha.c	ft_strlen.c	ft_toupper.c\
 			ft_strrchr.c	ft_strncmp.c	ft_strnstr.c\
+			ft_strchr.c	ft_strncmp.c
 NAME	=	libft.a
 
 CC		=	gcc

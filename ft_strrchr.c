@@ -13,6 +13,7 @@
 //#include <stdio.h>
 #include "libft.h"
 
+/*
 int	ft_strlen(const char *str)
 {
 	int	a;
@@ -21,20 +22,22 @@ int	ft_strlen(const char *str)
 	while (str[a])
 		a++;
 	return (a);
-}
+}*/
 
-char	*ft_strrch(char *s, int c)
+char	*ft_strrchr(char *s, int c)
 {
 	int	i;
 
 	i = ft_strlen(s);
-	while (i > 0)
+	if (!c)
+		return (&s[i + 1]);
+	while (i >= 0)
 	{
 		if (s[i] == c)
 			return (&s[i]);
 		i--;
 	}
-	return (s);
+	return (NULL);
 }
 
 /*
